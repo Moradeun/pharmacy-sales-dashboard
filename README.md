@@ -19,4 +19,15 @@ Community pharmacies often rely on manual record-keeping or basic reporting, whi
 
 This project solves these challenges by creating a **centralized analytical dashboard** for pharmacy operations.
 
+## 🔄 Data Preparation (Power Query)
+Data was cleaned and enriched in **Power Query**:
+1. Removed duplicates and null values  
+2. Derived new columns:
+   - **Total Sales** = Quantity Dispensed × Unit Cost  
+   - **Stock Value** = Quantity Remaining × Unit Cost  
+   - **Days to Expiry** = Expiry Date – Today (0 for expired)  
+   - **Expired Flag** = Valid or Expired  
+   - **Purchase Price** estimated based on profit margins by category  
+3. Created a **Calendar Table** for time-based analysis (Year, Month, Quarter)
+
 ---

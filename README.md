@@ -1,4 +1,4 @@
-# pharmacy-sales-dashboard
+# Pharmacy Sales Dashboard
 
 ## 📌 Project Overview
 Managing sales and inventory in a **community pharmacy** involves daily challenges:  

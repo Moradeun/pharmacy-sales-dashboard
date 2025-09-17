@@ -32,7 +32,7 @@ Data was cleaned and enriched in **Power Query**:
 
 
 ## 📸 Dashboard Preview
-![Dashboard Screenshot](./Dashboard/pharmacy_dashboard.png)
+![Dashboard Screenshot](Pharmacy Sales Dashboard.JPG)
 
 
 ## 📈 Insights & Findings

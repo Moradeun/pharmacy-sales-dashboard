@@ -21,14 +21,36 @@ This project solves these challenges by creating a **centralized analytical dash
 
 ## 🔄 Data Preparation (Power Query)
 Data was cleaned and enriched in **Power Query**:
-1. Removed duplicates and null values  
-2. Derived new columns:
-   - **Total Sales** = Quantity Dispensed × Unit Cost  
-   - **Stock Value** = Quantity Remaining × Unit Cost  
-   - **Days to Expiry** = Expiry Date – Today (0 for expired)  
-   - **Expired Flag** = Valid or Expired  
-   - **Purchase Price** estimated based on profit margins by category  
-3. Created a **Calendar Table** for time-based analysis (Year, Month, Quarter)
+1. Removed duplicates and null values
+2. Key DAX measures built:
+- **Total Sales** = SUM(Pharmacy[Total Sales])  
+- **Total Profit** = SUM(Pharmacy[Profit])  
+- **Quantity Dispensed** = SUM(Pharmacy[Quantity Dispensed])  
+- **Unique Patients** = DISTINCTCOUNT(Pharmacy[Patient ID])  
+- **Average Sales per Patient** = [Total Sales] ÷ [Unique Patients]  
+4. Created a **Calendar Table** for time-based analysis (Year, Month, Quarter)
+
+
+## 📸 Dashboard Preview
+![Dashboard Screenshot](./Dashboard/pharmacy_dashboard.png)
+
+
+## 📈 Insights & Findings
+- **Antibiotics & Antihypertensives** drive the highest sales and profit margins  
+- **Analgesics** contribute high sales volume but lower profitability due to low margins  
+- **Stock nearing expiry** poses significant financial risks if not addressed in time  
+- **Sales peaks** were observed in specific months, reflecting seasonal demand patterns  
+- **Patient trends** show repeat purchases, indicating opportunities for loyalty programs  
+
+---
+
+## 📝 Recommendations
+1. **Expiry Management** – Run promotions for near-expiry drugs to minimize waste  
+2. **Stock Reordering** – Use stock value trends to avoid stock-outs or overstocking  
+3. **Profit Maximization** – Focus on high-margin categories like antibiotics  
+4. **Patient Retention** – Create loyalty programs based on unique patient tracking  
+5. **Operational Reporting** – Adopt dashboards in day-to-day pharmacy operations  
+
 
 
 ## 🎯 Real-Life Application
@@ -39,3 +61,20 @@ This dashboard directly applies to **pharmacy operations management**:
 - **Profitability Analysis** → Focus on high-margin categories such as antibiotics and antihypertensives
 - **Patient Insights** → Understand patient purchasing trends to improve service delivery
 ---
+
+
+## 📈 Business Impact
+- 📉 **Reduced Expiry Losses** – by tracking drugs close to expiry and enabling timely clearance  
+- 📦 **Optimized Inventory** – ensured stock availability while reducing overstocking  
+- 💰 **Improved Profit Margins** – highlighted high-performing categories for focus  
+- 👩‍⚕️ **Better Patient Care** – tracked unique patients and their purchase patterns for service improvement  
+- 📊 **Data-Driven Decisions** – simplified reporting for faster managerial decisions  
+
+## ✅ Conclusion
+This project demonstrates how **data analytics can transform pharmacy management**.  
+By using **Power BI**, I created a tool that:  
+- Improves **inventory tracking**  
+- Reduces **financial losses from expiries**  
+- Optimizes **profitability by category**  
+- Enhances **patient service delivery**  
+- Supports **evidence-based decision-making** 

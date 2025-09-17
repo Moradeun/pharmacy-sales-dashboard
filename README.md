@@ -30,4 +30,12 @@ Data was cleaned and enriched in **Power Query**:
    - **Purchase Price** estimated based on profit margins by category  
 3. Created a **Calendar Table** for time-based analysis (Year, Month, Quarter)
 
+
+## 🎯 Real-Life Application
+This dashboard directly applies to **pharmacy operations management**:
+- **Sales Monitoring** → Track daily, monthly, and yearly sales and profit
+- **Inventory Control** → Monitor stock levels, stock value, and prevent stock-outs
+- **Expiry Management** → Identify drugs nearing expiry to reduce waste and losses
+- **Profitability Analysis** → Focus on high-margin categories such as antibiotics and antihypertensives
+- **Patient Insights** → Understand patient purchasing trends to improve service delivery
 ---
